@@ -52,7 +52,7 @@ export const Sidebar = () => {
 
   const [popoverOpen, setPopoverOpen] = useState(false);
 
-  const [logoutDialog, setLogoutDialog] = useState(false);
+  // const [logoutDialog, setLogoutDialog] = useState(false);
   const { logout } = useAuthStore();
 
   const [notificationDialog, setNotificationDialog] = useState(false);

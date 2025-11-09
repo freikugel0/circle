@@ -1,5 +1,5 @@
-import { queryKeys } from "@/lib/queryKeys";
-import { useQuery } from "@tanstack/react-query";
+// import { queryKeys } from "@/lib/queryKeys";
+// import { useQuery } from "@tanstack/react-query";
 import { createFileRoute, redirect } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/_app/profile/$userId")({
@@ -15,11 +15,11 @@ export const Route = createFileRoute("/_app/profile/$userId")({
 });
 
 function RouteComponent() {
-  const { userId } = Route.useLoaderData();
+  // const { userId } = Route.useLoaderData();
 
-  const { data, isLoading, error } = useQuery({
-    queryKey: [...queryKeys.users.details, userId],
-  });
+  // const { data, isLoading, error } = useQuery({
+  //   queryKey: [...queryKeys.users.details, userId],
+  // });
 
   return <div>Hello "/_app/profile/$userId"!</div>;
 }

@@ -35,7 +35,7 @@ export const FullProfile = ({ user }: { user: UserMe }) => {
     queryFn: () => getData(userApi.getUserThreads(user.id)),
   });
 
-  const [editProfileDialog, setEditProfileDialog] = useState(false);
+  const [_editProfileDialog, setEditProfileDialog] = useState(false);
 
   return (
     <div className="flex flex-col">
