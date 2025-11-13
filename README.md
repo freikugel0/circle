@@ -97,7 +97,7 @@ yarn build
 
 You can then serve the generated files from the dist folder with any static file server.
 
-### Contributing:
+## Contributing:
 
 - Fork this repository
 - Create a feature branch: git checkout -b feature/your-feature-name
@@ -105,6 +105,6 @@ You can then serve the generated files from the dist folder with any static file
 - Push to the branch: git push origin feature/your-feature-name
 - Open a Pull Request
 
-### Notes:
+## Notes:
 
 If you have ideas for improvements or find issues, feel free to open an issue or submit a pull request.
