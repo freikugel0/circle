@@ -1,69 +1,110 @@
-# React + TypeScript + Vite
+# Circle
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Circle is a microblogging frontend built with React, TypeScript, and Vite.  
+It focuses on a clean, fast UI for browsing and posting short updates, similar to a lightweight social feed.
 
-Currently, two official plugins are available:
+> Live demo: https://circle-freikugel.vercel.app  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Circle is designed as the frontend for a microblogging application.  
+The goal of this project is to explore modern frontend patterns with TypeScript, React, and Vite, while building a simple social-style interface.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+I'm using this project as:
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- A portfolio piece to showcase your frontend skills
+- A base to integrate with your own backend / API
+- A playground for experimenting with UI, state management, or authentication
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## Features
+
+Current and planned features include:
+
+- Timeline-style feed for short posts
+- Interface for composing new posts
+- User-centric layout (profile area, navigation, etc.)
+- Responsive layout for desktop and mobile
+- TypeScript-first codebase for better reliability and refactoring
+
+(You can update this section to match the exact features that are already implemented.)
+
+---
+
+## Tech Stack
+
+- React  
+- TypeScript  
+- Vite  
+- TailwindCSS & shadcn/ui
+- ESLint for linting and code quality
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18 or newer
+- npm, pnpm, or yarn
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/freikugel0/circle.git
+cd circle
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+# choose one
+pnpm install
+npm install
+yarn install
 ```
+
+### Development:
+
+Run the development server:
+
+```bash
+pnpm dev
+# or
+npm run dev
+# or
+yarn dev
+```
+
+Then open the URL shown in the terminal (usually http://localhost:5173).
+
+### Production Build:
+
+Create a production build:
+
+```bash
+pnpm build
+# or
+npm run build
+# or
+yarn build
+```
+
+You can then serve the generated files from the dist folder with any static file server.
+
+### Contributing:
+
+- Fork this repository
+- Create a feature branch: git checkout -b feature/your-feature-name
+- Commit your changes: git commit -m "Add some feature"
+- Push to the branch: git push origin feature/your-feature-name
+- Open a Pull Request
+
+### Notes:
+
+If you have ideas for improvements or find issues, feel free to open an issue or submit a pull request.
